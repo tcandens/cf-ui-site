@@ -20,8 +20,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 article, aside, details, figcaption, figure,
@@ -123,6 +121,7 @@ body {
 }
 .article img {
   max-width: 100%;
+  margin-bottom: 1em;
 }
 .article-header {
   margin: 0 0 2em 0;
