@@ -24,11 +24,33 @@ footer, header, hgroup, menu, nav, section {
 
 /* GOOGLE FONTS */
 /*-------------------------------------------------
+GLOBAL TYPOGRAPHY
+=================================================== */
+html {
+  font: 1.2em/1.7 'PT Serif', serif;
+  color: #67645e; }
+
+h1 {
+  font: 2.7em/1 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  color: #21221a;
+  letter-spacing: -0.02em; }
+
+h2 {
+  font: 0.8em/1 'Roboto Condensed', sans-serif;
+  color: #67645e;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+/*-------------------------------------------------
 MAIN STYLES
 =================================================== */
 body {
   margin: 3em auto 1em auto;
   max-width: 46.87em; }
+
+.right {
+  float: right; }
 
 /* HEADER */
 .header {
@@ -54,23 +76,23 @@ body {
   font: 9px/0.8 'Roboto Condensed', sans-serif; }
 
 /*NAVIGATION*/
-.nav {
+.social-links {
   width: 50%;
   float: left; }
 
-.nav-list {
+.social-links_list {
   display: inline;
   list-style: none;
   text-align: right; }
 
-.nav-item {
+.social-links_list--item {
   margin: 0.12em;
   float: right; }
 
-.nav-item:hover {
+.social-links_list--item:hover {
   opacity: 0.8; }
 
-.nav-item:nth-child(2) {
+.social-links_list--item:nth-child(2) {
   margin-left: 0.7em; }
 
 /*ARTICLE*/
@@ -83,50 +105,53 @@ body {
   max-width: 100%;
   margin-bottom: 1em; }
 
-.article-header {
+.article_header {
   margin: 0 0 2em 0; }
 
-.article-header_h2 {
+.article_header--h2 {
   float: left; }
 
-.print-link {
+.article_print-link {
   position: relative;
-  float: right;
   text-decoration: none; }
 
-.print-link:before {
+.article_print-link:before {
   content: '';
   display: block;
   position: absolute;
   left: -15px;
   width: 13px;
   height: 10px;
-  background-image: url("assets/print-icon.png"); }
+  background-image: url("../assets/print-icon.png"); }
 
 .article p {
   text-indent: 2em;
   margin-bottom: 1em; }
 
 /*INGREDIENTS LIST*/
-.ingredients-list {
+.ingredients {
   margin-bottom: 4em; }
 
-.ingredients {
+.ingredients_list {
   display: block;
   position: relative;
   list-style: none;
-  width: 900px;
-  height: 306px;
+  width: 100%;
+  width: calc(100% - 6px);
   padding: 5px 0 0 3em;
   font: 1.2em/31px 'Signika Negative', sans-serif;
-  background-image: url("assets/list-bg.png");
   background-repeat: no-repeat;
   -webkit-column-count: 2;
   -webkit-column-width: 50%;
   -moz-column-count: 2;
-  -moz-column-width: 50%; }
+  -moz-column-width: 50%;
+  background: repeating-linear-gradient(0deg, transparent, transparent 30px, #edead9 30px, #edead9 31px), linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px), linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px), #fefbea;
+  background-size: 100%, 1px 100%, 1px 100%;
+  background-position: 0 7px, 40px 0, 44px 0;
+  background-repeat: repeat, no-repeat, no-repeat;
+  box-shadow: 1px 1px 0px #b2b3a5, 2px 2px 0px white, 3px 3px 0px #b2b3a5, 4px 4px 0px white, 5px 5px 0px #b2b3a5, 5px 5px 5px #b2b3a5; }
 
-.ingredient {
+.ingredients_list--item {
   display: inline-block;
   width: 100%; }
 
@@ -151,7 +176,7 @@ input[type="checkbox"]:checked ~ span {
   margin-left: 95px;
   text-indent: 0 !important; }
 
-.share-recipe {
+.button {
   cursor: pointer;
   float: right;
   padding: 0.7em 1.4em;
@@ -160,10 +185,10 @@ input[type="checkbox"]:checked ~ span {
   color: white;
   border: 0; }
 
-.share-recipe:hover {
+.button:hover {
   opacity: 0.8; }
 
-.share-recipe:active {
+.button:active {
   background-color: red; }
 
 /*FOOTER*/
@@ -185,7 +210,7 @@ input[type="checkbox"]:checked ~ span {
   left: calc(50% - 15px);
   width: 31px;
   height: 33px;
-  background-image: url("assets/small-logo.png");
+  background-image: url("../assets/small-logo.png");
   background-repeat: no-repeat; }
 
 .ephemera {
@@ -196,7 +221,7 @@ input[type="checkbox"]:checked ~ span {
 /*-------------------------------------------------
 PSEUDO ELEMENT DIVIDERS
 =================================================== */
-.article:before, .ingredients-list:after {
+.article:before, .ingredients:after {
   content: '';
   display: block;
   position: relative;
@@ -209,7 +234,27 @@ PSEUDO ELEMENT DIVIDERS
 .article:before {
   top: -3em; }
 
-.ingredients-list:after {
+.ingredients:after {
   top: 2em; }
+
+@media screen and (max-width: 56.25em) {
+  body {
+    margin: 0.5em; }
+
+  .ingredients_list {
+    -webkit-column-count: 1;
+    -webkit-column-width: 100%; }
+
+  .article {
+    margin-bottom: 2em; }
+
+  .author-info {
+    width: 100%;
+    margin-bottom: 0em; }
+
+  .button {
+    display: block;
+    margin: 0 auto;
+    float: none; } }
 
 /*# sourceMappingURL=main.css.map */

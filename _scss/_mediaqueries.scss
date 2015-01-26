@@ -1,0 +1,22 @@
+@media screen and (max-width: 56.25em) {
+  body {
+      margin: 0.5em;
+  }
+
+  .ingredients_list {
+    -webkit-column-count: 1;
+    -webkit-column-width: 100%;
+  }
+  .article {
+    margin-bottom: 2em;
+  }
+  .author-info {
+    width: 100%;
+    margin-bottom: 0em;
+  }
+  .button {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+}
