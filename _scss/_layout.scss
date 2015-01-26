@@ -107,12 +107,12 @@ body {
   -webkit-column-width: 50%;
   -moz-column-count: 2;
   -moz-column-width: 50%;
-  background: repeating-linear-gradient(0deg, transparent, transparent 30px, #edead9 30px, #edead9 31px),
+  background: repeating-linear-gradient(0deg, transparent, transparent 97%, #edead9 97%, #edead9 100%),
               linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px),
               linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px),
               #fefbea;
-  background-size: 100%, 1px 100%, 1px 100%;
-  background-position: 0 7px, 40px 0, 44px 0;
+  background-size: 31px 31px, 1px 100%, 1px 100%;
+  background-position: 0 -1px, 40px 0, 44px 0;
   background-repeat: repeat, no-repeat, no-repeat;
   box-shadow: 1px 1px 0px #b2b3a5,
               2px 2px 0px white,
@@ -200,6 +200,7 @@ PSEUDO ELEMENT DIVIDERS
   position: relative;
   width: 100%;
   height: 16px;
+  // background: linear-gradient(45deg, transparent, transparent 5px, black 6px, transparent 7px, transparent 8px);
   background-image: linear-gradient(45deg, white 0%, white 49%, black 49%, white 51%, white 100%);
   background-size: 5px 5px;
   background-repeat: repeat;

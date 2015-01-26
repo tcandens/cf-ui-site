@@ -145,9 +145,9 @@ body {
   -webkit-column-width: 50%;
   -moz-column-count: 2;
   -moz-column-width: 50%;
-  background: repeating-linear-gradient(0deg, transparent, transparent 30px, #edead9 30px, #edead9 31px), linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px), linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px), #fefbea;
-  background-size: 100%, 1px 100%, 1px 100%;
-  background-position: 0 7px, 40px 0, 44px 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 97%, #edead9 97%, #edead9 100%), linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px), linear-gradient(90deg, #edd9b6, #edd9b6 1px, transparent 2px, transparent 5px), #fefbea;
+  background-size: 31px 31px, 1px 100%, 1px 100%;
+  background-position: 0 -1px, 40px 0, 44px 0;
   background-repeat: repeat, no-repeat, no-repeat;
   box-shadow: 1px 1px 0px #b2b3a5, 2px 2px 0px white, 3px 3px 0px #b2b3a5, 4px 4px 0px white, 5px 5px 0px #b2b3a5, 5px 5px 5px #b2b3a5; }
 
@@ -243,7 +243,9 @@ PSEUDO ELEMENT DIVIDERS
 
   .ingredients_list {
     -webkit-column-count: 1;
-    -webkit-column-width: 100%; }
+    -webkit-column-width: 100%;
+    -moz-column-count: 1;
+    -moz-column-width: 100%; }
 
   .article {
     margin-bottom: 2em; }

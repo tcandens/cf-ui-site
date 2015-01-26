@@ -6,6 +6,8 @@
   .ingredients_list {
     -webkit-column-count: 1;
     -webkit-column-width: 100%;
+    -moz-column-count: 1;
+    -moz-column-width: 100%;
   }
   .article {
     margin-bottom: 2em;
