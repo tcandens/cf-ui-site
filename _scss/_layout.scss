@@ -80,7 +80,7 @@ body {
   left: -15px;
   width: 13px;
   height: 10px;
-  background-image: url('assets/print-icon.png');
+  background-image: url('../assets/print-icon.png');
 }
 .article p {
   text-indent: 2em;
@@ -99,7 +99,7 @@ body {
   height: 306px;
   padding: 5px 0 0 3em;
   font: 1.2em/31px 'Signika Negative', sans-serif;
-  background-image: url('assets/list-bg.png');
+  background-image: url('../assets/list-bg.png');
   background-repeat: no-repeat;
   -webkit-column-count: 2;
   -webkit-column-width: 50%;
@@ -167,7 +167,7 @@ input[type="checkbox"]:checked ~ span {
   left: calc(50% - 15px);
   width: 31px;
   height: 33px;
-  background-image: url('assets/small-logo.png');
+  background-image: url('../assets/small-logo.png');
   background-repeat: no-repeat;
 }
 .ephemera {
